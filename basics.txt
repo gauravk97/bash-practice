@@ -1,4 +1,4 @@
-cp ./dir1 ./dir2
+cp -a ./dir1/. ./dir2
 mv ./dir1 ./dir2
 rm -rf
 nano textfile.txt
@@ -24,3 +24,4 @@ git push origin new_branch
 gpg -c textfile.txt #to encrypt
 gpg -d textfile.txt.gpg #to decrypt
 
+rsync -r ./dir1/ ./dir2
