@@ -1,0 +1,26 @@
+cp ./dir1 ./dir2
+mv ./dir1 ./dir2
+rm -rf
+nano textfile.txt
+echo $PATH
+sudo apt update && sudo apt upgrade
+less textfile.txt
+more textfile.txt
+
+echo $var >> output.txt
+
+
+### git
+git clone 
+git status
+git add . && git commit -m "yeehaaw"
+git push origin
+
+#dealing with branches
+git checkout -b "new_branch" # remove -b tag if the branch exists
+git push origin new_branch
+
+
+gpg -c textfile.txt #to encrypt
+gpg -d textfile.txt.gpg #to decrypt
+
