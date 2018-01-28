@@ -11,7 +11,7 @@ echo $var >> output.txt
 
 
 ### git
-git clone 
+git clone https://github.com/gauravk97/bash-practice.git
 git status
 git add . && git commit -m "yeehaaw"
 git push origin
