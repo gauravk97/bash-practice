@@ -28,3 +28,10 @@ rsync -r ./dir1/ ./dir2
 
 # set alias for virtualenv
 alias venv='source ./venv/bin/activate || echo "no virtual env present"'
+
+
+# find all subfolders containing 1 at level 2
+find . -mindepth 2 -type d -path "*1*"
+
+#find number of subfolders in dir
+find ./dir/ -maxdepth 1 -type d | wc -l
