@@ -6,9 +6,10 @@ boot with old kernel
 
 - check your /boot/grub/grub.cfg file and see if have an old version installed, but not active. otherwise https://askubuntu.com/questions/700214/how-do-i-install-an-old-kernel
 
-editing /etc/defaults/grub, putting something like this:
-GRUB_DEFAULT="1>3"
+- editing /etc/defaults/grub, putting something like this: 
+  GRUB_DEFAULT="1>3"
 
-In my case grub.cfg has a submenu in the second part and the kernel to load was the 4 section. Remeber: In grub the sections start on zero (0) that's way i put the second section like "1" and the 4 section like "3": "1>3".
-
-here: https://devtalk.nvidia.com/default/topic/1000340/cuda-setup-and-installation/-quot-nvidia-smi-has-failed-because-it-couldn-t-communicate-with-the-nvidia-driver-quot-ubuntu-16-04/
+- In my case grub.cfg has a submenu in the second part and the kernel to load was the 4 section. Remeber: In grub the sections start on zero (0) that's way i put the second section like "1" and the 4 section like "3": "1>3".
+- finally run
+  sudo update-grub
+- link here: https://devtalk.nvidia.com/default/topic/1000340/cuda-setup-and-installation/-quot-nvidia-smi-has-failed-because-it-couldn-t-communicate-with-the-nvidia-driver-quot-ubuntu-16-04/
