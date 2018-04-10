@@ -48,3 +48,5 @@ ssh -N -f -L localhost:8898:localhost:8889 abc@xxx.yyy.zzz.qqq
 
 # auto mount windows disks >> ## https://askubuntu.com/questions/123234/how-to-automount-my-windows-partition-at-boot
 sudo blkid # man?
+
+check this out for installing tar.gz apps: https://gist.github.com/flyingluscas/a462388c9452d2d71485a4035d577160
